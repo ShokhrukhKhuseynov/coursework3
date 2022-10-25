@@ -1,0 +1,581 @@
+/*-------------------------------------------------------------- Navigation bar --------------------------------------------------------------------*/
+#navigation-bar{ /*Sets up size, background image, color, position and transition of Logo icon*/
+width: 100%;
+height: 50px;
+background-color: #2FA4FF;
+position: fixed;
+z-index: 3;
+}
+
+#navigation-bar *{ /*Sets up size, background image, color, position and transition of Logo icon*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo{  /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin-top: 2px;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    height: 44px;
+    width: 45px;
+    background-position: center;
+    background-size: 46px;
+    border-style: unset;
+    transition: all 0.3s;
+}
+
+#logo:hover{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    cursor: pointer;
+    background-image: url(../image/logo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 41px;
+    width: 45px;
+    background-size: 47px;
+}
+
+
+#user{  /*Sets up size, background image, color, position and transition of Logo icon*/
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    width: 100px;
+    height: 40px;
+    background-position: left;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    border-style: unset;
+    background-color: unset;             
+    transition: all 0.7s;
+    padding-left: 40px;
+    padding-top: 10px;
+    transition: all 0.5s;
+    visibility: hidden;
+    margin-right: 3%;
+}
+
+#user:hover{
+    color: #D1D1D1;
+    cursor: pointer;
+}
+
+#logout{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    position:absolute;
+    left: 93%;
+    top: 100%;
+
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FF1700;
+    transition: all 0.3s;
+    visibility: hidden;
+}
+#logout:hover{
+    cursor: pointer;
+    background-color: #F05454;
+}
+/* ============================================================================================================================================== */
+/* ----------------------------------------------------Navigation menu------------------------------------------------------------------------------- */
+#navigation-menu{
+    position:fixed;
+    z-index: 3;
+    margin-top: 4%;
+    margin-left: 1%;
+    visibility: hidden;
+}
+
+#navigation-menu *{
+    display: inline-grid;
+    justify-items: start;
+}
+
+#editProfile{ /*Sets up size, background image, color, position and transition of Logo icon*/
+    font-size: 12px;
+    font-style: normal;
+    width: auto;
+    height: 60px;
+    background-position: left;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-top: 3px;
+    border-style: unset;
+    background-color: unset;
+    transition: all 0.7s;
+    padding-left: 45px;
+    transition: all 0.5s;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+#editProfile:hover{
+    color: #D1D1D1;
+    cursor: pointer;
+}
+
+#posts{ /*Sets up size, background image, color, position and transition of Logo icon*/
+    font-size: 12px;
+    font-style: normal;
+    width: auto;
+    height: 60px;
+    background-position: left;
+    background-size: 40px;
+    background-image: url(../image/posts.png);
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-top: 3px;
+    border-style: unset;
+    background-color: unset;
+    transition: all 0.7s;
+    padding-left: 45px;
+    transition: all 0.5s;
+    font-family: monospace;
+    font-weight: 600;
+    padding-top: 21px;
+}
+
+#posts:hover{
+    color: #D1D1D1;
+    cursor: pointer;
+}
+
+#images{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    font-size: 12px;
+    font-style: normal;
+    width: auto;
+    height: 60px;
+    background-position: left;
+    background-size: 40px;
+    background-image: url(../image/images.png);
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-top: 3px;
+    border-style: unset;
+    background-color: unset;
+    transition: all 0.7s;
+    padding-left: 45px;
+    transition: all 0.5s;
+    font-family: monospace;
+    font-weight: 600;
+    padding-top: 21px;
+}
+
+#images:hover{
+    color: #D1D1D1;
+    cursor: pointer;
+}
+
+#friends{   /*Sets up size, background image, color, position and transition of Logo icon*/
+    font-size: 12px;
+    font-style: normal;
+    width: auto;
+    height: 60px;
+    background-position: left;
+    background-size: 40px;
+    background-image: url(../image/friends.png);
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-top: 3px;
+    border-style: unset;
+    background-color: unset;
+    transition: all 0.7s;
+    padding-left: 45px;
+    transition: all 0.5s;
+    font-family: monospace;
+    font-weight: 600;
+    padding-top: 21px;
+}
+
+#friends:hover{
+    color: #D1D1D1;
+    cursor: pointer;
+}
+/* =========================================================================================================================================== */
+/* --------------------------------------------Body Content------------------------------------------------------------------------------------- */
+p{
+    font-family: monospace;
+    font-size: large;
+}
+
+body{
+    margin: 0px;
+    overflow-x: unset;
+}
+#bodyContent{   /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin: 0px;
+    padding-top: 4%;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30%;
+    height: 100%;
+}
+
+
+#postForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#postButton{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin-left: 90%;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #06FF00;
+    height: 25px;
+    width: 70px;
+    color: white;
+    transition: all 0.7s;
+}
+
+#postButton:hover{
+    cursor: pointer;
+    background-color: #BAFFB4;
+
+}
+
+#editForm{
+    margin-left: 10%;
+    margin-top: 15%;
+    border-top : solid 1px black;
+    border-bottom : solid 1px black;
+}
+
+#upload{
+    margin-left: 2%;
+    margin-top: 2%;
+    border-radius: 0px !important; 
+}
+
+#editForm *{
+    margin-left: 10%;
+}
+
+#editForm input{
+    border-radius: 10px;
+}
+
+#saveButton{
+  border-radius: 10px;
+  width: 175px;
+  background-color: #06FF00;
+  border-style: unset;
+  color: white;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+
+#saveButton:hover{
+    cursor: pointer;
+    background-color: #BAFFB4;
+}
+
+#postTop{
+    padding-top: 1%;
+    border-top: 1px solid black;
+}
+
+#postBottom{
+    border-bottom: 1px solid black;
+    padding-bottom: 1%;
+}
+
+#deletePost{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin-left: 90%;
+    background-color: #FF1700;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#deletePost:hover{
+    background-color: #F05454;
+    cursor: pointer;
+}
+
+#imageForm{ /*Sets up size, background image, color, position and transition of Logo icon*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#imageTop{
+    border-top: 1px solid black;
+    padding-top: 1%;
+}
+
+
+#deleteImage{   /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin-left: 90%;
+    background-color: #FF1700;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 1%;
+}
+
+#deleteImage:hover{
+    background-color: #F05454;
+    cursor: pointer;
+}
+
+#uploadImg{
+    margin-left: 23%;
+    font-family: cursive;
+}
+
+#uploadImage{   /*Sets up size, background image, color, position and transition of Logo icon*/
+    background-color:#06FF00;
+    border-style: none;
+    color: white;
+    width: 100px;
+    transition: all 0.3s;
+}
+
+#uploadImage:hover{
+    background-color: #BAFFB4;
+    cursor: pointer;
+}
+
+#friendForm{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#friendFName{
+    margin-right: 80%;
+    border-radius: 10px;
+}
+
+#friendLName{
+    margin-right: 80%;
+    border-radius: 10px;
+}
+
+
+#addFriendButton{   /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin-right: 80%;
+    border-radius: 10px;
+    background-color: #06FF00;
+    color:white;
+    transition: all 0.5s;
+    border-style: none;
+}
+
+#addFriendButton:hover{
+    background-color: #BAFFB4;
+    cursor: pointer;
+}
+
+#listFriendPara{
+    padding-left: 40%;
+    padding-top: 1%;
+    font-weight: 600;
+    border-top: 1px solid black;
+}
+
+#pFiend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#deleteFriend{  /*Sets up size, background image, color, position and transition of Logo icon*/
+    margin-left: 80%;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #FF1700;
+    transition: all 0.5s;
+    color: white;
+}
+
+#deleteFriend:hover{
+    cursor: pointer;
+    background-color: #F05454;
+}
+
+
+/* ==================================================================================================================================================== */
+/* ------------------------------------------------------Login/Registration---------------------------------------------------------------------------- */
+
+#logiDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#registForm{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-left: 1px dashed black ;
+    padding-left: 15%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+#signpara{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.LRtext{    /*Sets up size, background image, color, position and transition of Logo icon*/
+    width: 300px;
+    height: 35px;
+    border-radius: 30px;
+    text-align: center;
+    border: 1px solid gray;
+    margin-bottom: 5%;
+}
+
+#loginButton{   /*Sets up size, background image, color, position and transition of Logo icon*/
+    width: 306px;
+    height: 36px;
+    border-radius: 30px;
+    text-align: center;
+    border-style: none;
+    background-color: #5C7AEA;
+    color: white;
+    transition: all 0.3s;
+}
+
+#loginButton:hover{
+    background-color: #A2D2FF;
+    cursor: pointer;
+}
+
+#registButton{  /*Sets up size, background image, color, position and transition of Logo icon*/
+    width: 306px;
+    height: 36px;
+    border-radius: 30px;
+    text-align: center;
+    border-style: none;
+    background-color: #06FF00;
+    color: white;
+    transition: all 0.3s;
+}
+
+#registButton:hover{
+    background-color: #BAFFB4;
+    cursor: pointer;
+
+}
+
+#postfeedback{
+
+    font-family: monospace;
+}
+
+/* ================================================================================================================================================= */
+/* ================================================FOOTER======================================================================================== */
+.footBar{           /*Sets up size and background color of footer and displays all the elments in line*/
+    background-color: #3A3845;
+    width: 100%;
+    height: 210px;
+}
+.footBar form{
+    display: inline;
+}
+
+#twitter{           /*Sets up size, position, font, background and transition of twitter icon*/
+    margin-left: 660px ;
+    background-image: url(../image/twitter2.png);
+    height: 70px;
+    width: 70px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    border-style: none;
+    background-color: unset;
+    background-position: center;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+#twitter:hover{
+    background-image: url(../image/twitter.png);
+    cursor: pointer;
+} 
+
+#facebook{      /*Sets up size, position, font, background and transition of facebook icon*/
+        background-image: url(../image/facebook1.png);
+        height: 70px;
+        width: 70px;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        border-style: none;
+        background-color: unset;
+        background-position: center;
+        border-radius: 100%;
+        transition: all 0.5s;
+}
+#facebook:hover{
+        background-image: url(../image/facebook.png);
+        cursor: pointer;
+}
+
+#youtube{       /*Sets up size, position, font, background and transition of youtube icon*/
+    background-image: url(../image/youtube2.png);
+    height: 70px;
+    width: 70px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    border-style: none;
+    background-color: unset;
+    background-position: center;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+#youtube:hover{
+    background-image: url(../image/youtube.png);
+    cursor: pointer;
+}
+
+#instagram{         /*Sets up size, position, font, background and transition of instagram icon*/
+    background-image: url(../image/Instagram.png);
+    height: 70px;
+    width: 70px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    border-style: none;
+    background-color: unset;
+    background-position: center;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+#instagram:hover{
+    background-image: url(../image/Instagram2.png);
+    cursor: pointer;
+}
+
+footer h2{  /*Sets up size, font, color and position of contact texts*/
+    margin-left: 720px;
+    font-family:monospace;
+    font-size: 28px;
+    color: white;
+}
+
+footer h3{
+    margin-left: 610px;
+    font-family:monospace;
+    font-size: 20px;
+    color: white;
+}

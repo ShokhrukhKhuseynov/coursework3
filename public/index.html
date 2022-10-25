@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+</head>
+<body>
+    <nav>
+        <div id="navigation-bar">
+            <form>
+                <button id="logo" type="button"></button>
+                <button id="user" onclick="loadOut()" type="button">USER</button>
+                <button id="logout" type="button">LOGOUT</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="navigation-menu">
+        <form>
+            <button id="editProfile" type="button"><p id="editProfile-name">USER</p>Edit profile</button>
+            <button id="posts" type="button">Posts</button>
+            <button id="images" type="button">Images</button>
+            <button id="friends" type="button">Friends</button>
+        </form>
+    </div>
+    <div id="bodyContent">
+    </div> 
+
+    <footer>
+        <div id="footer" class="footBar">
+            <form action="https://twitter.com/">
+                <input type="submit" value="" id="twitter">
+            </form>
+            <form action="https://www.facebook.com/">
+                <input type="submit" value="" id="facebook">
+            </form>
+            <form action="https://www.youtube.com/">
+                <input type="submit" value="" id="youtube">
+            </form> 
+            <form action="https://www.instagram.com/">
+                <input type="submit" value="" id="instagram">
+            </form>
+            <h2>CONTACTS</h2>
+            <h3>(+44)123456789 | example@mail.com</h3>
+        </div> 
+    </footer>
+    <script src="./client.js"></script>
+</body>
+</html>
